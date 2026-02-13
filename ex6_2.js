@@ -1,9 +1,8 @@
-let contador = 0;
-while (contador < 3) {
-  console.log("Número:", contador);
-  contador++;
+let contagem = 10;
+while (contagem >= 1) {
+  console.log(contagem);
+  contagem--;
+  if (contagem < 1){
+    console.log("Lançamento!")
+  }
 }
-// Saída:
-// Número: 0
-// Número: 1
-// Número: 2
