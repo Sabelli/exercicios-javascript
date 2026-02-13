@@ -1,7 +1,21 @@
-function calcularArea(base, altura) {
-  return ((base * altura) / 2);
+let global = "Sou global";
+function testarEscopo() {
+  let local = "Sou local";
+  console.log(global);           // Funciona
+  console.log(local);            // Funciona
 }
-console.log(calcularArea(10, 5));
+testarEscopo();
+console.log(global);             // Funciona
+// console.log(local);           // ❌ Erro — fora do escopo
 
-const cumprimentar = (nome, periodo) => "Boa " + periodo + ", " +nome;
-console.log(cumprimentar("Cláudio","Noite"));
+function processar(callback) {
+  console.log("Processando...");
+  callback();
+}
+processar(() => console.log("Finalizado!"));
+// Saída: Processando... / Finalizado!
+
+async function pegarDados() {
+  return "Dados recebidos!";
+}
+pegarDados().then(console.log);  // Dados recebidos!
