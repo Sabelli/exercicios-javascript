@@ -1,9 +1,10 @@
-for (let i = 0; i < 5; i++) {
-  console.log("Contador:", i);
+for (let i = 0; i <= 10; i++) {
+  if (i % 2 === 0){
+    console.log("Contador:", i);
+  }
 }
-// Saída:
-// Contador: 0
-// Contador: 1
-// Contador: 2
-// Contador: 3
-// Contador: 4
+
+let alunos = ["Ana", "Bruno", "Clara", "Diego"];
+for (let i = 0; i < alunos.length; i++){
+  console.log(i+": "+alunos[i])
+}
