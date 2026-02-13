@@ -1,3 +1,3 @@
-console.log(10 + 5);
-console.log(20 - 8);
-console.log(4 * 3);
+console.log(100 / 4);
+console.log(7 * 7);
+console.log(17 % 5);
