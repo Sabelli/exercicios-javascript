@@ -1,11 +1,7 @@
-// Função tradicional:
-function saudacao(nome) {
-  return "Olá, " + nome + "!";
+function calcularArea(base, altura) {
+  return ((base * altura) / 2);
 }
-console.log(saudacao("Maria"));     // Olá, Maria!
-// Arrow Function equivalente:
-const saudacaoArrow = (nome) => "Olá, " + nome + "!";
-console.log(saudacaoArrow("João")); // Olá, João!
-// Arrow com uma linha: return é automático
-const dobro = (n) => n * 2;
-console.log(dobro(7));              // 14
+console.log(calcularArea(10, 5));
+
+const cumprimentar = (nome, periodo) => "Boa " + periodo + ", " +nome;
+console.log(cumprimentar("Cláudio","Noite"));
