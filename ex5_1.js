@@ -1,9 +1,8 @@
-let hora = 14;
-if (hora < 12) {
-  console.log("Bom dia!");
-} else if (hora < 18) {
-  console.log("Boa tarde!");
+let nota = 7;
+if (nota >= 7) {
+  console.log("Aprovado");
+} else if (nota >= 5 && nota < 7) {
+  console.log("Recuperação");
 } else {
-  console.log("Boa noite!");
+  console.log("Reprovado");
 }
-// Como hora = 14, a saída será: Boa tarde!
