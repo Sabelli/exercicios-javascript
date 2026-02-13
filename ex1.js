@@ -1,2 +1,3 @@
-console.log("Olá, mundo! Este é meu primeiro script.");
-console.log("Aprendendo JavaScript com React Native.");
+console.log("Nome: Victor Sabelli");
+console.log("Curso: Análise e Desenvolvimento de Sistemas");
+console.log("Estou aprendendo JavaScript!");
