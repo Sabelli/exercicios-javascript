@@ -1,11 +1,12 @@
-let pessoa = {
-  nome: "Carlos",
-  idade: 30,
-  ativo: true
+let veiculo = {
+  marca: "FIAT",
+  modelo: "Argo",
+  ano: 2020,
+  disponivel: true
 };
-console.log(pessoa.nome);        // "Carlos"
-console.log(pessoa["idade"]);    // 30
-console.log(pessoa.ativo);       // true
-// Adicionando nova propriedade:
-pessoa.email = "carlos@email.com";
-console.log(pessoa.email);       // "carlos@email.com"
+console.log(veiculo.marca);
+console.log(veiculo.modelo); 
+console.log(veiculo["ano"]);
+console.log(veiculo["disponivel"]);
+veiculo.cor = "Preto";
+console.log(veiculo.cor);
