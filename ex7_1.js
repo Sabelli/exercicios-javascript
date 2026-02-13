@@ -1,23 +1,7 @@
-// Parte A - Escopo
-let app = "MinhaApp";
-function funcaoTeste() {
-  let versao = "1.0";
-  console.log(app);
-  console.log(versao);
+function calcularArea(base, altura) {
+  return ((base * altura) / 2);
 }
-funcaoTeste();
-console.log(app);
-// console.log(versao); // não funciona porque a variável versao foi criada dentro da função testarEscopo, e não na "raíz" do código
+console.log(calcularArea(10, 5));
 
-// Parte B - Callback
-function executarTarefa(nomeTarefa, callback) {
-  console.log("Iniciando: " + nomeTarefa);
-  callback();
-}
-executarTarefa("Lavar Roupa", () => console.log("Tarefa concluída!"));
-
-// Parte C - Async
-async function buscarPerfil() {
-  return "Perfil carregado: Usuário Padrão";
-}
-buscarPerfil().then(console.log);
+const cumprimentar = (nome, periodo) => "Boa " + periodo + ", " +nome;
+console.log(cumprimentar("Cláudio","Noite"));
